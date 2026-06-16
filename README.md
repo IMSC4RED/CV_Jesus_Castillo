@@ -1,29 +1,25 @@
-# CV_Example
+# CV_Jesus_Castillo
 # Hoja de Vida
 
-## Nombre Completo
-**Profesión:** _Tu profesión_
+## Jesus David Castillo Perez
+**Profesión:** _Analista y Desarrollador de Software_
 
 ## 📞 Contacto
-- **Teléfono:** +57 123 456 7890
-- **Email:** [correo@ejemplo.com](mailto:correo@ejemplo.com)
-- **LinkedIn:** [linkedin.com/in/tuusuario](https://linkedin.com/in/tuusuario)
+- **Email:** [castilloperez3456@gmail.com](mailto:castilloperez3456@gmail.com)
+- **LinkedIn:** [https://www.linkedin.com/in/jesus-c4stillo/](https://www.linkedin.com/in/jesus-c4stillo/)
 
 ## 🏢 Experiencia Laboral
-### **Empresa XYZ** _(2020 - Actualidad)_
-- Puesto ocupado y descripción breve.
-
-### **Empresa ABC** _(2018 - 2020)_
-- Puesto ocupado y descripción breve.
+### **SENA** _(2026 - Actualidad)_
+- Contrato de aprendizaje.
 
 ## 🎓 Educación
-### **Universidad Ejemplo** _(2014 - 2018)_
-- Título obtenido.
+### **I.E.T.A. San José de Clemencia** _(2017 - 2022)_
+- Bachiller.
 
 ## 💡 Habilidades
-- **Habilidad 1**
-- **Habilidad 2**
-- **Habilidad 3**
+- **Autodidacta**
+- **Resolucionador de problemas**
+- **Perseverante**
 
 ---
 
