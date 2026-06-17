@@ -3,72 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja de Vida</title>
+    <title>CV - Jesus David Castillo Perez</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Variables de diseño para cambiar colores fácilmente */
+        :root {
+            --primary-color: #1e293b; /* Azul oscuro principal */
+            --accent-color: #2563eb;  /* Azul brillante para resaltar */
+            --text-color: #334155;    /* Gris oscuro para el texto */
+            --bg-color: #f8fafc;      /* Fondo claro */
+            --card-bg: #ffffff;      /* Fondo de las secciones */
+        }
+
+        * {
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .container {
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .cv-container {
             max-width: 800px;
-            background: white;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+        }
+
+        /* Encabezado Principal */
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            font-weight: 400;
+        }
+
+        /* Contenido del CV */
+        .content {
+            padding: 30px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Sección Contacto */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            background: #f1f5f9;
             padding: 20px;
-            margin: auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
-        h1, h2 {
-            color: #333;
+
+        .contact-item {
+            font-size: 0.95rem;
         }
-        .section {
+
+        .contact-item strong {
+            color: var(--primary-color);
+        }
+
+        .contact-item a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Bloques de Experiencia y Educación */
+        .info-block {
             margin-bottom: 20px;
         }
-        .contacto, .experiencia, .educacion, .habilidades {
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 10px;
+
+        .info-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
+
+        .info-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        .info-date {
+            font-size: 0.9rem;
+            color: #64748b;
+            background: #e2e8f0;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .info-desc {
+            font-size: 0.95rem;
+            padding-left: 5px;
+        }
+
+        /* Habilidades */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .skills-list li {
+            background-color: #eff6ff;
+            color: var(--accent-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #bfdbfe;
+        }
+
+        /* Adaptación para pantallas pequeñas */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            header {
+                padding: 30px 20px;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .content {
+                padding: 20px;
+            }
+            .info-header {
+                flex-direction: column;
+                gap: 5px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Nombre Completo</h1>
-        <p><strong>Profesión:</strong> Tu profesión</p>
+
+    <div class="cv-container">
         
-        <div class="section contacto">
-            <h2>Contacto</h2>
-            <p><strong>Teléfono:</strong> +57 123 456 7890</p>
-            <p><strong>Email:</strong> correo@ejemplo.com</p>
-            <p><strong>LinkedIn:</strong> linkedin.com/in/tuusuario</p>
-        </div>
+        <!-- Encabezado con tu nombre y profesión -->
+        <header>
+            <h1>Jesus David Castillo Perez</h1>
+            <div class="subtitle">Analista y Desarrollador de Software</div>
+        </header>
 
-        <div class="section experiencia">
-            <h2>Experiencia Laboral</h2>
-            <p><strong>Empresa XYZ</strong> (2020 - Actualidad)</p>
-            <p>Puesto ocupado y descripción breve.</p>
+        <div class="content">
             
-            <p><strong>Empresa ABC</strong> (2018 - 2020)</p>
-            <p>Puesto ocupado y descripción breve.</p>
-        </div>
+            <!-- Información de Contacto -->
+            <section>
+                <h2>📞 Contacto</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <strong>Email:</strong> 
+                        <a href="mailto:castilloperez3456@gmail.com">castilloperez3456@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>LinkedIn:</strong> 
+                        <a href="https://www.linkedin.com/in/jesus-c4stillo/" target="_blank">jesus-c4stillo</a>
+                    </div>
+                </div>
+            </section>
 
-        <div class="section educacion">
-            <h2>Educación</h2>
-            <p><strong>Universidad Ejemplo</strong> (2014 - 2018)</p>
-            <p>Título obtenido.</p>
-        </div>
+            <!-- Experiencia Laboral -->
+            <section>
+                <h2>🏢 Experiencia Laboral</h2>
+                <div class="info-block">
+                    <div class="info-header">
+                        <span class="info-title">SENA</span>
+                        <span class="info-date">2026 - Actualidad</span>
+                    </div>
+                    <p class="info-desc">Contrato de aprendizaje.</p>
+                </div>
+            </section>
 
-        <div class="section habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Habilidad 1</li>
-                <li>Habilidad 2</li>
-                <li>Habilidad 3</li>
-            </ul>
+            <!-- Educación -->
+            <section>
+                <h2>🎓 Educación</h2>
+                <div class="info-block">
+                    <div class="info-header">
+                        <span class="info-title">I.E.T.A. San José de Clemencia</span>
+                        <span class="info-date">2017 - 2022</span>
+                    </div>
+                    <p class="info-desc">Bachiller.</p>
+                </div>
+            </section>
+
+            <!-- Habilidades -->
+            <section>
+                <h2>💡 Habilidades</h2>
+                <ul class="skills-list">
+                    <li>Autodidacta</li>
+                    <li>Resolución de problemas</li>
+                    <li>Perseverante</li>
+                </ul>
+            </section>
+
         </div>
     </div>
+
 </body>
-    
-<script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2025/04/05/02/20250405021404-CM8Q1FN6.js"></script>
-    
 </html>
